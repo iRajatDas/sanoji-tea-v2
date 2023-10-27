@@ -1,7 +1,6 @@
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
-import { Icons } from "@/components/icons"
 import { Coffee } from "lucide-react";
 
 export function MainNav() {
@@ -10,7 +9,7 @@ export function MainNav() {
       <Link href="/" className="flex items-center space-x-2 text-yellow-900	">
         <Coffee className="h-7 w-7" />
         {/* <Icons.logo className="h-7 w-7" /> */}
-        <span className="inline-block text-xl font-bold">
+        <span className="inline-block font-bold">
           {siteConfig.name}
         </span>
       </Link>

@@ -26,19 +26,7 @@ const products = [
   {
     name: "Product 3",
     url: "https://picsum.photos/seed/sanoji_tea-3/225/280",
-  },
-  {
-    name: "Product 4",
-    url: "https://picsum.photos/seed/sanoji_tea-4/225/280",
-  },
-  {
-    name: "Product 5",
-    url: "https://picsum.photos/seed/sanoji_tea-5/225/280",
-  },
-  {
-    name: "Product 6",
-    url: "https://picsum.photos/seed/sanoji_tea-6/225/280",
-  },
+  }
 ];
 
 export default async function Page({ searchParams: {} }: Props) {
