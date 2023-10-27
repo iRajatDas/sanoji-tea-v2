@@ -22,7 +22,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between space-x-4 px-6 sm:space-x-0">
         <MainNav />
-        <div className="flex items-center space-x-12">
+        <div className="flex items-center space-x-2 md:space-x-4 xl:space-x-12">
           <div className="pr-4 hidden md:flex items-center space-x-8 font-medium tracking-wide">
             <Link
               className="hover:opacity-70 transition-opacity ease-in-out duration-200"
