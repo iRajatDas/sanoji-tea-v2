@@ -1,3 +1,4 @@
+import { Icons } from "@/components/icons";
 import { ProductGrid } from "@/components/product-grid";
 import { siteConfig } from "@/config/site";
 import { shimmer, toBase64 } from "@/lib/image";
@@ -62,38 +63,37 @@ export default async function Page({ searchParams: {} }: Props) {
         </div>
       </div>
       <div className="px-4 pt-12 text-center">
-        <h1 className="text-4xl font-extrabold tracking-normal">
+        <h1 className="text-4xl font-extrabold tracking-normal text-yellow-900">
           {siteConfig.tagline}
         </h1>
-        <p className="mx-auto mt-4 max-w-3xl text-base">
+        <p className="mx-auto mt-4 max-w-3xl text-base text-yellow-950/70">
           {siteConfig.description}
         </p>
       </div>
+      <div className="max-w-lg mx-auto px-4 md:px-0">
+        <Icons.divider className="py-6 md:py-12 xl:py-20" />
+      </div>
       <div>
         <main className="mx-auto max-w-6xl px-6">
-          <div className="flex items-center justify-between border-b border-gray-200 pb-4 pt-24 dark:border-gray-800">
-            <h1 className="text-xl font-bold tracking-tight sm:text-2xl">
-              Our Products
-            </h1>
-            {/* Product Sort */}
-            {/* <ProductSort /> */}
-          </div>
-
-          <section aria-labelledby="products-heading" className="pb-24 pt-6">
-            <h2 id="products-heading" className="sr-only">
-              Products
-            </h2>
-            <div
-              className={cn(
-                "grid grid-cols-1 gap-x-8 gap-y-10",
-                // true ? "" : "lg:grid-cols-[1fr_3fr]"
-                "lg:grid-cols-4"
-              )}
-            >
-              {/* <div className="hidden lg:block"><ProductFilters /></div> */}
-
-              <ProductGrid products={products} />
+          <section>
+            <div className="space-y-4 border-b border-gray-200 pb-4 dark:border-gray-800">
+              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl text-yellow-900 w-full text-center">
+                Our Products
+              </h1>
             </div>
+
+            <section aria-labelledby="products-heading" className="pb-24 pt-6">
+              <h2 id="products-heading" className="sr-only">
+                Products
+              </h2>
+              <div
+                className={cn(
+                  "grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4"
+                )}
+              >
+                <ProductGrid products={products} />
+              </div>
+            </section>
           </section>
         </main>
       </div>

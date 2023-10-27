@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { usePathname, useRouter, useSearchParams } from "next/navigation"
-import { Edit, Send, ShoppingBag } from "lucide-react"
+import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { Edit, Send, ShoppingBag } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { MainNav } from "@/components/main-nav"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { MainNav } from "@/components/main-nav";
 
 export function SiteHeader() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   if (pathname === "/studio") {
-    return null
+    return null;
   }
 
   return (
@@ -31,9 +31,9 @@ export function SiteHeader() {
         </form> */}
         <div className="flex items-center space-x-1">
           <Link href="/contact-us">
-            <Button size="sm" variant="default">
-              <Send className="h-5 w-5" />
-              <span className="ml-2 text-sm font-bold">Contact</span>
+            <Button size="sm" className="bg-yellow-900/70" variant="default">
+              <Send className="h-4 w-4" />
+              <span className="ml-2 text-sm font-medium">Contact</span>
             </Button>
           </Link>
           {/* Show sanity studio link in dev mode only */}
@@ -53,5 +53,5 @@ export function SiteHeader() {
         </div>
       </div>
     </header>
-  )
+  );
 }

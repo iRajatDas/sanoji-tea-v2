@@ -47,7 +47,7 @@ export function ProductGrid({ products }: Props) {
               className="h-full w-full object-cover object-center"
             />
           </div>
-          <h3 className="mt-4 font-semibold">{product.name}</h3>
+          <h3 className="mt-4 font-semibold text-yellow-950/70">{product.name}</h3>
           {/* <p className="mt-2 font-medium">
             {formatCurrencyString({
               currency: product.currency,
