@@ -107,7 +107,7 @@ export default function ContactForm() {
           )}
         />
 
-        <Button type="submit" disabled={form.formState.isSubmitting}>
+        <Button type="submit" className="bg-yellow-900/70" disabled={form.formState.isSubmitting}>
           {form.formState.isSubmitting ? "Submitting..." : "Submit"}
         </Button>
       </form>

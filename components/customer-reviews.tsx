@@ -58,7 +58,7 @@ const CustomerReview = () => {
                     5 stars{" "}
                   </span>
                   <div className="col-span-3 relative w-full bg-gray-200 rounded-full h-1.5">
-                    <div className="absolute inset-y-0 left-0 w-[80%] bg-gray-900 rounded-full"></div>
+                    <div className="absolute inset-y-0 left-0 w-[80%] bg-yellow-900/70 rounded-full"></div>
                   </div>
                   <span className="text-sm font-medium text-gray-600 whitespace-nowrap">
                     {" "}
@@ -72,7 +72,7 @@ const CustomerReview = () => {
                     4 stars{" "}
                   </span>
                   <div className="col-span-3 relative w-full bg-gray-200 rounded-full h-1.5">
-                    <div className="absolute inset-y-0 left-0 w-[30%] bg-gray-900 rounded-full"></div>
+                    <div className="absolute inset-y-0 left-0 w-[30%] bg-yellow-900/70 rounded-full"></div>
                   </div>
                   <span className="text-sm font-medium text-gray-600 whitespace-nowrap">
                     {" "}
@@ -86,7 +86,7 @@ const CustomerReview = () => {
                     3 stars{" "}
                   </span>
                   <div className="col-span-3 relative w-full bg-gray-200 rounded-full h-1.5">
-                    <div className="absolute inset-y-0 left-0 w-[15%] bg-gray-900 rounded-full"></div>
+                    <div className="absolute inset-y-0 left-0 w-[15%] bg-yellow-900/70 rounded-full"></div>
                   </div>
                   <span className="text-sm font-medium text-gray-600 whitespace-nowrap">
                     {" "}
@@ -100,7 +100,7 @@ const CustomerReview = () => {
                     2 stars{" "}
                   </span>
                   <div className="col-span-3 relative w-full bg-gray-200 rounded-full h-1.5">
-                    <div className="absolute inset-y-0 left-0 w-[10%] bg-gray-900 rounded-full"></div>
+                    <div className="absolute inset-y-0 left-0 w-[10%] bg-yellow-900/70 rounded-full"></div>
                   </div>
                   <span className="text-sm font-medium text-gray-600 whitespace-nowrap">
                     {" "}
@@ -114,7 +114,7 @@ const CustomerReview = () => {
                     1 star{" "}
                   </span>
                   <div className="col-span-3 relative w-full bg-gray-200 rounded-full h-1.5">
-                    <div className="absolute inset-y-0 left-0 w-[20%] bg-gray-900 rounded-full"></div>
+                    <div className="absolute inset-y-0 left-0 w-[20%] bg-yellow-900/70 rounded-full"></div>
                   </div>
                   <span className="text-sm font-medium text-gray-600 whitespace-nowrap">
                     {" "}
