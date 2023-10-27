@@ -2,7 +2,8 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Sanoji Tea",
-  description: "The taste of the Himalayas",
+  tagline: "Experience the Taste of Authentic Indian Tea.",
+  description: "Discover our wide variety of delicious teas sourced directly from the best tea gardens in India.",
   footer: [
     { name: "Home", href: "/" },
     { name: "About", href: "#" },
