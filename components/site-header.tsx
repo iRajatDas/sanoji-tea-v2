@@ -22,12 +22,32 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between space-x-4 px-6 sm:space-x-0">
         <MainNav />
-        <div className="flex items-center space-x-2">
-          <div className="pr-4 hidden md:flex items-center space-x-4 font-medium">
-            <Link href={"/"}>Home</Link>
-            <Link href={"/"}>Company Profile</Link>
-            <Link href={"/"}>Quality Policy</Link>
-            <Link href={"/"}>Management</Link>
+        <div className="flex items-center space-x-12">
+          <div className="pr-4 hidden md:flex items-center space-x-8 font-medium tracking-wide">
+            <Link
+              className="hover:opacity-70 transition-opacity ease-in-out duration-200"
+              href={"/"}
+            >
+              Home
+            </Link>
+            <Link
+              className="hover:opacity-70 transition-opacity ease-in-out duration-200"
+              href={"/"}
+            >
+              Company Profile
+            </Link>
+            <Link
+              className="hover:opacity-70 transition-opacity ease-in-out duration-200"
+              href={"/"}
+            >
+              Quality Policy
+            </Link>
+            <Link
+              className="hover:opacity-70 transition-opacity ease-in-out duration-200"
+              href={"/"}
+            >
+              Management
+            </Link>
           </div>
           <Link href="/contact-us">
             <Button size="sm" className="bg-yellow-900/70" variant="default">
