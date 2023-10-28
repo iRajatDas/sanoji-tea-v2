@@ -10,13 +10,13 @@ import { MainNav } from "@/components/main-nav";
 import useMenuStore from "@/lib/menuStore";
 
 export function SiteHeader() {
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
   const toggleMenu = useMenuStore((state) => state.toggle);
 
-  if (pathname === "/studio") {
-    return null;
-  }
+  // if (pathname === "/studio") {
+  //   return null;
+  // }
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
