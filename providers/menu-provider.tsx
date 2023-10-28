@@ -1,13 +1,9 @@
 "use client";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent } from "@/components/ui/sheet";
+import { siteConfig } from "@/config/site";
 import useMenuStore from "@/lib/menuStore";
+import Link from "next/link";
 import React from "react";
 
 const MenuProvider = () => {
@@ -20,20 +16,21 @@ const MenuProvider = () => {
         side={"right"}
         onOverlayClick={toggleMenu}
         closeButtonClick={toggleMenu}
+        closeButtonClassName="h-10 w-10 grid place-items-center text-gray-500 hover:text-gray-900 transition-colors ease-in-out duration-200"
       >
-        <SheetHeader>
-          {/* <SheetTitle>Are you sure absolutely sure?</SheetTitle> */}
-          {/* <SheetDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
-          </SheetDescription> */}
-        </SheetHeader>
         <div className="py-10">
           <ul className="divide-y divide-gray-200 ">
-            <li className="py-2">Home</li>
-            <li className="py-2">Company Profile</li>
-            <li className="py-2">Quality Policy</li>
-            <li className="py-2">Management</li>
+            {siteConfig.header.map((item, _index) => (
+              <li key={item.name} className="w-full">
+                <Link
+                  onClick={toggleMenu}
+                  className="hover:opacity-70 transition-opacity ease-in-out duration-200 w-full inline-block py-4"
+                  href={item.href}
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </SheetContent>

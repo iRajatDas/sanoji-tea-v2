@@ -25,7 +25,6 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function sendEmail(data: ContactFormInputs) {
   const result = ContactFormSchema.safeParse(data);
   if (result.success) {
-    console.log("I was here", result.data);
     const { name, email, message } = result.data;
     try {
       const data = await resend.emails.send({
@@ -42,7 +41,6 @@ export async function sendEmail(data: ContactFormInputs) {
   }
 
   if (result.error) {
-    console.log("I was here on error", result.error);
     return { success: false, error: result.error.format() };
   }
 }
