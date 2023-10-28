@@ -12,7 +12,7 @@ export function SiteHeader() {
   const toggleMenu = useMenuStore((state) => state.toggle);
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between space-x-4 px-6 sm:space-x-0">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between space-x-4 px-4 sm:space-x-0">
         <MainNav />
         <div className="flex items-center space-x-2 md:space-x-4 xl:space-x-12">
           <div className="pr-4 hidden md:flex items-center space-x-8 font-medium tracking-wide">
