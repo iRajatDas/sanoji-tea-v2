@@ -34,7 +34,7 @@ export function ProductGrid({ products }: Props) {
           // href={`/products/${product.slug}`}
           className="group text-sm"
         >
-          <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg border-2 border-gray-200 bg-gray-100 group-hover:opacity-75 dark:border-gray-800">
+          <div className="aspect-[225/280] w-full overflow-hidden rounded-lg border-2 border-gray-200 bg-gray-100 group-hover:opacity-75 dark:border-gray-800">
             <Image
               src={product.url}
               placeholder="blur"
@@ -47,7 +47,9 @@ export function ProductGrid({ products }: Props) {
               className="h-full w-full object-cover object-center"
             />
           </div>
-          <h3 className="mt-4 font-semibold text-yellow-950/70">{product.name}</h3>
+          <h3 className="mt-4 font-semibold text-yellow-950/70">
+            {product.name}
+          </h3>
           {/* <p className="mt-2 font-medium">
             {formatCurrencyString({
               currency: product.currency,

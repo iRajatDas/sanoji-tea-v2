@@ -16,4 +16,6 @@ export const siteConfig = {
     { name: "About", href: "#" },
     { name: "FAQ", href: "#" },
   ],
+  banner: {
+  }
 };

@@ -21,12 +21,12 @@ const products = [
     url: "/images/sanoji-masala-chai.jpg",
   },
   {
-    name: "Product 2",
-    url: "https://picsum.photos/seed/sanoji_tea-2/225/280",
+    name: "Sanjoi Gold Tea",
+    url: "/images/sanoji-gold-tea.jpg",
   },
   {
-    name: "Product 3",
-    url: "https://picsum.photos/seed/sanoji_tea-3/225/280",
+    name: "Sanoji Long Leaf Tea",
+    url: "/images/sanoji-long-leaf-tea.jpg",
   },
 ];
 
