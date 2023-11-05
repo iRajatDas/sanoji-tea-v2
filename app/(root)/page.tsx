@@ -28,6 +28,10 @@ const products = [
     name: "Sanoji Long Leaf Tea",
     url: "/images/sanoji-long-leaf-tea.jpg",
   },
+  {
+    name: "Sanoji Tea",
+    url: "/images/sanoji-tea-chai.jpeg",
+  },
 ];
 
 export default async function Page({ searchParams: {} }: Props) {
